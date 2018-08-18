@@ -5,8 +5,8 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"mpkg/convert/mapstruct"
-	ptime "mpkg/time"
+	"github.com/wxiaowar/mpkg/convert/mapstruct"
+	ptime "github.com/wxiaowar/mpkg/time"
 	"reflect"
 	"strconv"
 	"time"
@@ -429,4 +429,3 @@ func StructToMap(obj interface{}) map[string]interface{} {
 func MapToStruct(data map[string]interface{}, obj interface{}) error {
 	return mapstruct.Decode(data, obj)
 }
-
